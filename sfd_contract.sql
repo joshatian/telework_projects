@@ -88,6 +88,7 @@ ALTER TABLE public.boc OWNER TO postgres;
 CREATE TABLE public.budget (
     budget_id integer NOT NULL,
     value numeric(11,2),
+    mipr character varying(30),
     obligated_amt_paid_id integer,
     committed_amt_paid_id integer,
     prior_fy_fund_id integer,
